@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+  <head>
+    <style></style>
+  </head>
+  <body>
+    <form
+      action="C:\Users\ELCOT\Desktop\html\my first registration form\end_page.html"
+      method="post"
+    >
+      <fieldset>
+        <legend>REGISTRATION FORM</legend>
+        <label for="first-name">First name:</label>
+        <input
+          type="text"
+          name="first_name"
+          id="first-name"
+          autocomplete="given-name"
+          required
+          autofocus
+        /><br /><br />
+
+        <label for="lastname">Last name :</label>
+        <input
+          type="text"
+          name="last_name"
+          id="lastname"
+          autocomplete="family-name"
+          required
+          autofocus
+        /><br /><br />
+
+        <label for="username"> user name :</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          autocomplete="username"
+          required
+          autofocus
+        /><br /><br />
+
+        <label for="password"> password : </label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          autofocus
+        /><br /><br />
+
+        <label for="confirm-password"> confirm password : </label>
+        <input
+          type="password"
+          name="confirm_password"
+          id="confirm-password"
+          required
+          autofocus
+        /><br /><br />
+
+        <label for="date"> Date of birth : </label>
+        <input
+          type="date"
+          name="date"
+          id="date"
+          required
+          autofocus
+        /><br /><br />
+
+        <label for="email"> Email : </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          autofocus
+        /><br /><br />
+
+        <label for="phone"> phone number : </label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          autocomplete="tel"
+          pattern="[0-9]{10}"
+          maxlength="10"
+          required
+          autofocus
+        /><br /><br />
+
+        <label for="phone"> telephone : </label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          autocomplete="tel"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          maxlength="12"
+          required
+          autofocus
+          placeholder="Formate:123-123-1234"
+        />
+        (optional)<br /><br />
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male" />male
+        <input type="radio" name="gender" value="female" />female
+        <input type="radio" name="gender" value="others" />others <br /><br />
+
+        <label>participated in any of the sports : </label>
+        <input type="checkbox" name="sports1" value="cricket" /> cricket
+        <input type="checkbox" name="sports2" value="soccer" /> soccer
+        <input type="checkbox" name="sports3" value="hockey" /> hockey
+        <input type="checkbox" name="sports4" value="Tennis" />Tennis
+        <input type="checkbox" name="sports5" value="none" />none <br /><br />
+
+        <label> address :</label> <textarea> </textarea><br /><br />
+
+        <label> upload your file :</label>
+        <input type="file" name="file" /><br /><br />
+
+        <input type="submit" name="submit" /><br /><br />
+
+        <!-- if you want to create a button for something , we can use the button attribute -->
+        <input type="button" value="button" /><br /><br />
+        <input type="reset" value="reset" /><br /><br />
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #99d5e7ec;
+        color: #222222;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+      }
+
+      form {
+        max-width: 640px;
+        margin: 0 auto;
+      }
+
+      fieldset {
+        background-color: #fffaf0;
+        border: 1px solid #d3bf95;
+        border-radius: 10px;
+        padding: 24px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08);
+      }
+
+      legend {
+        font-weight: bold;
+        font-size: 1.2em;
+        padding: 0 8px;
+      }
+
+      h2 {
+        font-family: Georgia, serif;
+        margin-top: 0;
+        margin-bottom: 0.5em;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 0.3em;
+        font-weight: 600;
+        font-size: 0.95em;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      input[type="date"],
+      input[type="tel"],
+      input[type="file"],
+      select {
+        width: 100%;
+        max-width: 100%;
+        padding: 8px;
+        border: 1px solid #b8a57a;
+        border-radius: 4px;
+        background: #ffffff;
+        font-family: inherit;
+        font-size: 1em;
+      }
+
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-right: 6px;
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+        padding: 8px 16px;
+        border: 1px solid #a68a4e;
+        background: #e8d6b1;
+        color: #333333;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 600;
+        margin-right: 10px;
+      }
+
+      input[type="submit"]:hover,
+      input[type="reset"]:hover {
+        background: #dfc891;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>REGISTRATION FORM</legend>
+        <br />
+        <h2><u>STUDENT REGISTRATION FORM </u></h2>
+        <hr />
+        <br />
+        <label for="first-name">FIRST NAME:</label>
+        <input
+          type="text"
+          name="first_name"
+          id="first-name"
+          autocomplete="given-name"
+          required
+          autofocus
+        /><br /><br />
+
+        <label for="lastname">LAST NAME :</label>
+        <input
+          type="text"
+          name="last_name"
+          id="lastname"
+          autocomplete="family-name"
+          required
+          autofocus
+        /><br /><br />
+
+        <label for="father-name">FATHER NAME :</label>
+        <input
+          type="text"
+          name="father-name"
+          id="father-name"
+          autocomplete="father-name"
+          required
+          autofocus
+        /><br /><br />
+
+        <label for="mother-name">MOTHER NAME :</label>
+        <input
+          type="text"
+          name="mother-name"
+          id="mother-name"
+          autocomplete="mother-name"
+          required
+          autofocus
+        /><br /><br />
+
+        <label for="email"> EMAIL:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          autocomplete="email"
+          required
+        /><br /><br />
+
+        <label for="phone-number"> PHONE NUMBER:</label>
+        <input
+          type="number"
+          id="phone-number"
+          name="phone-number"
+          autocomplete="number"
+          pattern="[0-9]{10}"
+          placeholder="Format:**********"
+          autofocus
+          required
+        /><br /><br />
+
+        <label for="telephone"> TELEPHONE:</label>(optional)
+        <input
+          type="number"
+          id="telephone"
+          name="telephone"
+          autocomplete="number"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          placeholder="123-123-1234"
+          autofocus
+          required
+        /><br /><br />
+
+        <label for="birth"> DATE OF BIRTH:</label>
+        <input
+          type="date"
+          id="birth"
+          name="birth"
+          autofocus
+          required
+        /><br /><br />
+
+        <label for="age"> AGE: </label>
+        <select id="age" name="age" autofocus required>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="none">none above this</option>
+        </select>
+        <br /><br />
+
+        <label for="gender"> GENDER:</label>
+        <input type="radio" name="gender" value="male" />male
+        <input type="radio" name="gender" value="female" />female
+        <input type="radio" name="gender" value="others" />others <br /><br />
+
+        <label for="blood-group"> BLOOD GROUP:</label>
+        <input type="radio" name="blood-group" id="blood-group" value="A+" />A+
+        <input type="radio" name="blood-group" id="blood-group" value="A-" />A-
+        <input type="radio" name="blood-group" id="blood-group" value="B+" />B+
+        <input type="radio" name="blood-group" id="blood-group" value="B-" />B-
+        <input type="radio" name="blood-group" id="blood-group" value="O+" />O+
+        <input type="radio" name="blood-group" id="blood-group" value="O-" />O-
+        <input
+          type="radio"
+          name="blood-group"
+          id="blood-group"
+          value="AB+"
+        />AB+
+        <input
+          type="radio"
+          name="blood-group"
+          id="blood-group"
+          value="AB-"
+        />AB- <br /><br />
+
+        <label for="address"> ADDRESS:</label>
+        <input
+          type="text"
+          size="100"
+          id="address"
+          name="address"
+          placeholder="Enter your address"
+          required
+          autofocus
+        />
+        <br /><br />
+
+        <label for="nationality">NATIONALITY:</label>
+        <select name="nationality" id="nationality" required autofocus>
+          <option value="indian">Indian</option>
+          <option value="american">American</option>
+          <option value="british">British</option>
+          <option value="canadian">Canadian</option>
+          <option value="australian">Australian</option>
+          <option value="chinese">Chinese</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="religion">RELIGION:</label>
+        <input
+          type="text"
+          id="religion"
+          name="religion"
+          placeholder="Enter your religion"
+          required
+          autofocus
+        /><br /><br />
+
+        <label for="caste">CASTE:</label>
+        <input
+          type="text"
+          id="caste"
+          name="caste"
+          placeholder="Format: Caste"
+          required
+          autofocus
+        /><br /><br />
+
+        <label for="community">COMMUNITY:</label>
+        <input type="radio" id="community" name="community" value="BC" />BC
+        <input type="radio" id="community" name="community" value="MBC" />MBC
+        <input type="radio" id="community" name="community" value="SC" />SC
+        <input type="radio" id="community" name="community" value="ST" />ST
+
+        <input
+          type="radio"
+          id="community"
+          name="community"
+          value="others"
+        />others <br /><br />
+
+        <label for="place">PLACE OF BIRTH:</label>
+        <input
+          type="text"
+          id="place"
+          name="place"
+          placeholder="Format:city,state"
+          required
+          autofocus
+        /><br /><br />
+
+        <label for="sports">EVER PARTICIPATED IN ANY OF THIS SPORTS</label>
+        <input type="checkbox" name="sports1" value="cricket" /> cricket
+        <input type="checkbox" name="sports2" value="soccer" /> soccer
+        <input type="checkbox" name="sports3" value="hockey" /> hockey
+        <input type="checkbox" name="sports4" value="Tennis" />Tennis
+        <input type="checkbox" name="sports5" value="none" />none <br /><br />
+
+        <label for="academics-info">ACADEMICS INFORMATION:</label>
+        <input
+          type="text"
+          id="academics-info"
+          name="academics-info"
+          size="50"
+          placeholder="Format: School/College Name, Year of Passing"
+          autofocus
+        />(optional)<br /><br />
+
+        <label for="academics-contact">SCHOOL/COLLAGE CONTACT:</label>(optional)
+        <input
+          type="number"
+          id="academics-contact"
+          name="academics-contact"
+          placeholder="Enter contact information"
+          maxlength="10"
+          placeholder="Format:**********"
+          autofocus
+        /><br /><br />
+
+        <label for="acamedics-email">SCHOOL/COLLAGE EMAIL:</label>(optional)
+        <input
+          type="email"
+          id="academics-email"
+          name="academics-email"
+          placeholder="Enter email address"
+          autofocus
+        /><br /><br />
+
+        <label for="academics-address">SCHOOL/COLLAGE TELEPHONE:</label
+        >(optional)
+        <input
+          type="tel"
+          id="academics-address"
+          name="academics-address"
+          placeholder="Format: 123-456-7890"
+          autofocus
+        /><br /><br />
+
+        <label for="Aadhaar">SUBMIT YOUR AADHAAR:</label>
+        <input
+          type="file"
+          id="aadhaar"
+          name="aadhaar"
+          placeholder="Format:.pdf,.jpg,.jpeg,.png"
+          accept=".pdf,.jpg,.jpeg,.png"
+          required
+        />
+        <br /><br />
+
+        <label for="photo">UPLOAD YOUR PHOTO:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required />
+        <br /><br />
+
+        <label for="medical-certificate"
+          >UPLOAD YOUR MEDICAL CERTIFICATE:</label
+        >
+        <input
+          type="file"
+          id="medical-certificate"
+          name="medical-certificate"
+          accept=".pdf,.jpg,.jpeg,.png"
+          required
+        /><br /><br />
+
+        <label for="correct"
+          >I HEREBY DECLARE THAT THE INFORMATION PROVIDED IS TRUE AND
+          CORRECT:</label
+        >
+        <input
+          type="checkbox"
+          id="correct"
+          name="correct"
+          required
+        /><br /><br />
+        <label for="signature">SIGNATURE</label>
+        <input
+          type="file"
+          id="signature"
+          name="signature"
+          placeholder="pdf/jpg/image"
+          accept=".pdf,.jpg,.jpeg,.png,image/*"
+          required
+        />
+        <br /><br />
+        CLICK ME <input type="submit" value="submit" /> | RESET ME
+        <input type="reset" value="reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>
